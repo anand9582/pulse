@@ -1,17 +1,41 @@
-import { Carousel } from '@trendyol-js/react-carousel';
+import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const CustomSlider = ({ DataArr }) => {
-    return (
-        <Carousel infinite={true} show={4} slide={1} transition={0.5} swipeOn={1} swiping={true} rightArrow={true} leftArrow={true} className="city-slider">
-            {
-                DataArr.map(({ id, imageURL, imageAltText }) => (
-                    <div key={id}>
-                        <img src={imageURL} alt={imageAltText} />
-                    </div>
-                ))
-            }
-        </Carousel>
-    )
-}
+  const settings = {
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      arrows: false,
+      dots: true,
+  };
 
-export default CustomSlider
+  return (
+    <Slider {...settings}>
+      {DataArr.map(({ id, heading, subtext }) => (
+        <div key={id} className="slider-slide" style={{ height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <div
+            style={{
+              textAlign: 'center',
+              backgroundColor: 'rgba(0, 0, 0, 0.4)',
+              padding: '30px',
+              borderRadius: '10px',
+              color: '#fff',
+              maxWidth: '80%',
+            }}
+          >
+            <h2 style={{ margin: 0 }}>{heading}</h2>
+            <p style={{ marginTop: '10px', fontSize: '18px' }}>{subtext}</p>
+          </div>
+        </div>
+      ))}
+    </Slider>
+  );
+};
+
+export default CustomSlider;

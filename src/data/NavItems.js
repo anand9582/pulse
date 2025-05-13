@@ -2,20 +2,16 @@ import MainCountingIDGenerator, { insertIDIntoData } from "./MainCountingID";
 
 const NavItems = [
     {
-        itemName: "home",
-        itemURL: "/",
+        itemName: "Our Solutions",
+        itemURL: "#",
     },
     {
-        itemName: "about",
-        itemURL: "/about",
+        itemName: "Industries",
+        itemURL: "#",
     },
     {
-        itemName: "deals",
-        itemURL: "/deals",
-    },
-    {
-        itemName: "reservation",
-        itemURL: "/reservation",
+        itemName: "Our Pricing",
+        itemURL: "#",
     }
 ];
 

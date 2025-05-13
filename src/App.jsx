@@ -6,10 +6,12 @@ import Deals from "./components/Deals/Deals";
 import Landing from "./components/Home/Landing";
 import Navbar from "./components/Navbar";
 import Reservation from "./components/Reservation/Reservation";
-import "./scss/main.scss"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import 'bootstrap/dist/css/bootstrap.min.css'; 
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'; 
+import "./scss/main.scss"
 
 
 

@@ -22,11 +22,11 @@ const Navbar = () => {
     return (
         <nav className="navbar" id="navbar">
             <div className="container">
-                <div className="row">
-                    <Link className="navbar__logo" to="/">
-                        <img src="./assets/images/logo.png" alt="Woox Logo" onClick={closingNavItemAfterCLick} />
+                    <Link className="navbar__logo" to="/" onClick={closingNavItemAfterCLick}>
+                        <img src="./assets/images/logo.png" alt="Woox Logo" />
                     </Link>
 
+                    {/* Centered Menu Items */}
                     <ul className={`navbar__list ${toggler ? "active" : ""}`}>
                         {
                             NavItems.map(({ id, itemName, itemURL }) => (
@@ -37,15 +37,21 @@ const Navbar = () => {
                         }
                     </ul>
 
+                    {/* Login and Book Now Buttons at the right end */}
+                    <div className="navbar__actions">
+                        <Link to="#" className="navbar__action-btn login-btn">Login</Link>
+                        <Link to="#" className="navbar__action-btn booknow-btn">Book Now</Link>
+                    </div>
+
+                    {/* Navbar Toggle for Mobile */}
                     <div className={`navbar__toggler ${toggler ? "active" : ""}`} onClick={changeToggle}>
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
-                </div>
             </div>
         </nav>
     )
 }
 
-export default Navbar
+export default Navbar;

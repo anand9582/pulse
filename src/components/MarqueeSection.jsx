@@ -8,11 +8,11 @@ import spicejet from '../assets/spicejet-min.png'
 
 const MarqueeSection = () => {
   const topImages = [
-    spicejet, pnl, columbia, cobb, columbia,spicejet, pnl, columbia, cobb, columbia
+    spicejet, pnl, columbia, cobb, columbia, spicejet, pnl, columbia, cobb, columbia
   ];
 
   const bottomImages = [
-    columbia, spicejet, pnl, columbia, cobb,columbia, spicejet, pnl, columbia, cobb, 
+    columbia, spicejet, pnl, columbia, cobb, columbia, spicejet, pnl, columbia, cobb,
   ];
 
 
@@ -20,27 +20,38 @@ const MarqueeSection = () => {
 
   return (
     <div className="container py-4 mt-4 ">
-
       <h6
         style={{
           fontFamily: 'Inter, sans-serif  ',
-          fontWeight: '500',
-          fontSize: '18px',
+          fontWeight: '400',
+          fontSize: '1.8rem',
+          letterSpacing: '2px',
+          color: '#3366ff',
+          textAlign: 'center',
+          marginTop: "3%",
+        }}
+      >
+       Our Partners
+      </h6>
+      <h6
+        style={{
+          fontFamily: 'Inter, sans-serif  ',
+          fontWeight: '600',
+          fontSize: '2.8rem',
           letterSpacing: '2px',
           color: '#1A1A1A',
-          marginTop: "50px",
-          marginBottom: "50px",
-          textAlign: 'center'
+          textAlign: 'center',
+          marginTop: "1%",
         }}
       >
         Trusted by Leading Brands
       </h6>
 
 
-      <div style={{ marginBottom: '0%' }}>
+      <div style={{ marginTop: '5%' }}>
         <Marquee images={topImages} direction="left" />
       </div>
-      <div style={{ marginTop: '0%' }}>
+      <div style={{ marginTop: '2.5%' }}>
         <Marquee images={bottomImages} direction="right" />
       </div>
 
