@@ -7,9 +7,19 @@ import Landing from "./components/Home/Landing";
 import Navbar from "./components/Navbar";
 import Reservation from "./components/Reservation/Reservation";
 import "./scss/main.scss"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
+
 
 const App = () => {
-
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
   return (
     <div className="app">
       <Navbar />
@@ -17,7 +27,6 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Landing />} />
       </Routes>
-      {/* <Loading /> */}
     </div>
   );
 }

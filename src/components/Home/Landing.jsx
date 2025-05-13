@@ -6,11 +6,16 @@ import Visit from './Visit'
 import FirstFooter from '../Global/FirstFooter'
 import SecondFooter from '../Global/SecondFooter'
 import EnterSection from '../Global/EnterSection'
+import MarqueeSection from '../MarqueeSection'
+import StorePulseSection from '../StorePulseSection'
+import IndustriesCards from '../VideosSec/IndustriesCards'
+import StorePulseSteps from '../Steps/StorePulseSteps'
+
 
 const Landing = () => {
     return (
         <>
-            <div className='landing' id='landing'>
+            <div className='landing ' id='landing'>
                 <div className="container">
                     <div className="row">
                         <EnterSection secName="landing" firstSentence="take a glimpse into the beautiful country of:"
@@ -36,11 +41,16 @@ const Landing = () => {
                 </div>
             </div>
 
-            <Visit />
+            <MarqueeSection/>
+            <StorePulseSection/>
+            <IndustriesCards/>
+            <StorePulseSteps/>
 
-            <FirstFooter />
+           <Visit />
 
-            <SecondFooter />
+              {/* <FirstFooter />
+
+            <SecondFooter /> */}
         </>
     )
 }
