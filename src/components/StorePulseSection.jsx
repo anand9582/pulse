@@ -4,9 +4,10 @@ import StorePulseSlider from './StorePulseSlider';
 import './StorePulseSection.css';
 
 
+
 const StorePulseSection = () => {
     return (
-        <div className=" container py-5 " >
+        <div className="container-fluid py-5 custom-margin">
             <div className="row align-items-center ">
                 <div
                     className="col-md-6 mb-4 mb-md-0 d-flex flex-column "

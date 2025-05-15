@@ -5,6 +5,7 @@ import cobb from '../assets/cobb-min.png'
 import columbia from '../assets/columbia-min.png'
 import pnl from '../assets/pnl-min.png'
 import spicejet from '../assets/spicejet-min.png'
+import './MarqueeSection.css'; 
 
 const MarqueeSection = () => {
   const topImages = [
@@ -19,7 +20,7 @@ const MarqueeSection = () => {
 
 
   return (
-    <div className="container py-4 mt-4 ">
+    <div className="marquee-container container-fluid py-4 mt-4 ">
       <h6
         style={{
           fontFamily: 'Inter, sans-serif  ',

@@ -25,10 +25,11 @@
 
 .card-video {
   width: 100%;
-  height: 100%;
+  height: 220px;
   object-fit: cover;
   transition: transform 0.4s ease, filter 0.4s ease;
   filter: brightness(0.8);
+  border-radius: 10px;
 }
 
 .play-icon {
@@ -41,6 +42,16 @@
   pointer-events: none;
   z-index: 2;
   transition: opacity 0.3s ease;
+}
+.industry-card{
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.industry-card .card-content .card-title{
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: #1C1C1C;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .industry-card.hovered .play-icon {
@@ -77,11 +88,20 @@
   padding-top: 2%;
   padding-bottom: 2%;
 }
-
-.card-content li {
+.list-item li{
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
-  color: #333; /* slightly softer black for better readability */
+  line-height: 30px;
+  position: relative;
+  padding-left: 28px;
+  color: #3F3F3F; /* slightly softer black for better readability */
+}
+.list-item li .icon{
+ width: 20px;
+ height: 20px;
+ object-fit: contain;
+ position: absolute;
+ top: 8px;
+ left: 0;
 }

@@ -1,0 +1,18 @@
+.footer-container {
+    background-image: url('../../assets/footer.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    height: 425px;
+    /* opacity: 0.6; */
+  }
+  
+  .border-top-light {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .container-custom {
+    margin-left: 5%;
+    margin-top: 6rem;
+  }

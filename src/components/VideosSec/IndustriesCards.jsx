@@ -123,7 +123,7 @@ const IndustriesCards = () => {
         {data.map((item, idx) => (
           <Col xs={12} sm={6} md={4} className="d-flex justify-content-center">
             <Card
-              className={`industry-card ${hoverIndex === idx ? 'hovered' : ''}`}
+              className={`industry-card  border-0 p-3 ${hoverIndex === idx ? 'hovered' : ''}`}
               onMouseEnter={() => handleMouseEnter(idx)}
               onMouseLeave={() => handleMouseLeave(idx)}
             >
@@ -140,13 +140,14 @@ const IndustriesCards = () => {
               </div>
               <Card.Body className="card-content">
                 <Card.Title>{item.title}</Card.Title>
-                <ul className="list-unstyled">
+                <ul className="list-item list-unstyled">
                   {item.points.map((point, i) => (
-                    <li key={i} className="mb-2 d-flex align-items-start">
+                    <li key={i} className="mb-2 d-flex align-items-center">
                       <img
                         src={iconMatrix[idx][i]}
                         alt="icon"
-                        style={{ width: '18px', height: '18px', marginRight: '8px' }}
+                        className='icon'
+                        
                       />
                       {point}
                     </li>

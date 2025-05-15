@@ -1,0 +1,8 @@
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 90%;
+    margin: 0 auto; /* ⬅️ This centers it horizontally */
+  }
+  

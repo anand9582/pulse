@@ -1,0 +1,49 @@
+.verified-tag {
+    font-size: 1.5rem;
+    color: #3F78E0;
+    letter-spacing: 1px;
+    /* border: 1px solid #4A90E2; */
+    padding: 4px 12px;
+    /* border-radius: 4px; */
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .subtitilee {
+    font-size: 1.8rem;
+    font-size: 600;
+  }
+  
+  .brand-logo {
+    max-height: 36px;
+    max-width: 121px;
+    width: auto;
+    /* opacity: 0.75; */
+    /* transition: opacity 0.3s ease; */
+  }
+  
+  .brand-logo:hover {
+    opacity: 1;
+  }
+
+  .first {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   /* justify-content-center */
+    align-items: center;       /* align-items-center */
+    margin-bottom: 1rem;       /* mb-3 */
+    gap: 8rem ;    
+    margin-top: 4rem;
+  }
+
+  .second {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   /* justify-content-center */
+    align-items: center;       /* align-items-center */
+    margin-bottom: 1rem;       /* mb-3 */
+    gap: 8rem ;    
+    margin-top: 4rem;
+  }
+  

@@ -1,10 +1,12 @@
 .custom-margin {
-  margin-top: 38px;
-  margin-left: 10px;
+  /* margin-left: 15% !important;
+  margin-right: 15% !important; */
+  width: 90% !important;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .custom-margin {
-    margin-left: 120px;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
