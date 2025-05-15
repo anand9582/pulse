@@ -8,8 +8,8 @@
     }
 
     &__explore {
-        width: 80%;
-        padding: 3rem 10px;
+        width: 92%;
+         padding: 1.9rem 10px;
         border-radius: 20px;
         position: absolute;
         bottom: 100%;
@@ -23,14 +23,22 @@
         -ms-flex-align: center;
         align-items: center;
 
+        .currentIcon{
+            width: 56px;
+            height: 56px;
+              @include breakpoint(tablet) {
+                 width: 32px;
+                height: 32px;
+            }
+        }
+
         @include breakpoint(tablet) {
             width: 100%;
             padding: 1rem;
             border-radius: 2rem;
             @include grid-columns(2);
-            justify-items: center;
-            -ms-flex-line-pack: center;
-            align-content: center;
+            justify-items: start;
+            align-content: start;
         }
 
         &__item {
@@ -56,7 +64,9 @@
                 -webkit-box-align: start;
                 -ms-flex-align: start;
                 align-items: flex-start;
-
+                 @include breakpoint(tablet) {
+                           margin-left: 12px;
+                    }
                 span {
                     text-align: start;
                     font-family: "Inter", sans-serif;
@@ -67,14 +77,14 @@
                      color: map-get($colors, "dark-green");
 
                     @include breakpoint(tablet) {
-                        font-size: 1.4rem;
+                        font-size: 14px!important;
                     }
                 }
 
                 span:nth-child(2) {
                     text-transform: uppercase;
                     color: #717171;
-                    font-size:16px;
+                    font-size:14px;
                    font-weight: 400;
                     margin-top: 4px;
                 }
@@ -85,10 +95,45 @@
 
 .retail_box{
     h4{
-         font-size: 20px;
-         font-weight: 500;
+         font-size: 18px;
+         font-weight: 400;
          line-height: 24px;
          font-family: 'Inter', sans-serif;
-            letter-spacing: 1px;
+         letter-spacing: 1px;
     }
+}
+.retail_box {
+  .retail_line {
+    display: flex;
+    width: 770px;
+    height: 2px;
+    margin: auto;
+      @include breakpoint(tablet) {
+            width: 100%;
+       }
+    .line {
+      flex: 1;
+      background-color: #212121;
+
+      &.active {
+        background-color: #3F78E0;
+      }
+    }
+  }
+
+  .retail_tabs {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 20px;
+    width: 660px;
+    margin: 20px auto 0;
+    color: #fff;
+       @include breakpoint(tablet) {
+            width: 100%;
+       }
+    .tab {
+      flex: 1;
+    }
+  }
 }

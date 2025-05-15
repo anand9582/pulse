@@ -14,7 +14,6 @@ const Deals = () => {
             </div>
 
             <BestOffers />
-
             <SecondFooter />
         </section>
     )
