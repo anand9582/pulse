@@ -9,11 +9,22 @@ import TestimonialSlider from './components/Deals/TestimonialSlider';
 import GrowingBusiness from './components/Deals/GrowingBusiness';
 import Navbar from "./components/Navbar";
 import Reservation from "./components/Reservation/Reservation";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; 
 import "./scss/main.scss"
-const App = () => {
 
+
+
+const App = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
   return (
     <div className="app">
       <Navbar />
@@ -23,7 +34,6 @@ const App = () => {
           <Oneplace />
          <TestimonialSlider />
          <GrowingBusiness/>
-      {/* <Loading /> */}
         
       {/* <Deals /> */}
     </div>

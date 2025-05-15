@@ -1,0 +1,10 @@
+.custom-margin {
+  margin-top: 38px;
+  margin-left: 10px;
+}
+
+@media (min-width: 768px) {
+  .custom-margin {
+    margin-left: 120px;
+  }
+}
